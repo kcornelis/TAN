@@ -1,6 +1,6 @@
 import * as express from 'express';
 
-export class App {
+class Express {
     
     app: express.Express;
     
@@ -22,3 +22,5 @@ export class App {
         });
     }
 }
+
+export = Express;

@@ -2,17 +2,16 @@
   "name": "tan",
   "version": "1.0.0",
   "description": "Typescript angular2 nodejs",
-  "main": "index.js",
   "scripts": {
-    "start": "ts-node server.ts",
+    "start": "node server.js",
     "postinstall": "typings install"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^1.8.2"
   },
   "dependencies": {
-    "express": "^4.13.4"
+    "express": "^4.13.4",
+    "ts-node": "^0.5.5"
   }
 }
