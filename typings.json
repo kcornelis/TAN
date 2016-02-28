@@ -1,0 +1,13 @@
+{
+  "name": "tan",
+  "dependencies": {
+ 
+  },
+  "devDependencies": {},
+  "ambientDependencies": {
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts",
+    "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts",
+    "serve-static": "github:DefinitelyTyped/DefinitelyTyped/serve-static/serve-static.d.ts",
+    "mime": "github:DefinitelyTyped/DefinitelyTyped/mime/mime.d.ts"
+  }
+}

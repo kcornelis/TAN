@@ -4,12 +4,15 @@
   "description": "Typescript angular2 nodejs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node server.ts",
+    "postinstall": "typings install"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
-    "typescript": "^1.8.2",
-    "typescript-require": "^0.2.9-1"
+    "typescript": "^1.8.2"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
   }
 }
