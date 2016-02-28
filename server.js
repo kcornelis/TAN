@@ -1,5 +1,5 @@
 require('ts-node/register');
-var Express = require('./config/express');
+var config = require('./config/express');
 
-var express = new Express();
+var express = new config.Express();
 express.start();

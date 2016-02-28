@@ -2,7 +2,7 @@ import * as express from 'express';
 import * as path from 'path';
 import * as consolidate from 'consolidate';
 
-class Express {
+export class Express {
     
     app: express.Express;
     
@@ -23,8 +23,6 @@ class Express {
 	    this.app.set('views', './app/web/views');
     
         this.app.get('/', function (req, res) { res.render('index'); });
-        this.app.use(express.static(path.resolve('./public')));
+        this.app.use(express.static(path.resolve('./'))); // todo fix this!
     }
 }
-
-export = Express;

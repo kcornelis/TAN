@@ -5,7 +5,7 @@
     },
     "exclude": [
         "node_modules",
-        "typings/browser.d.ts",
-        "typings/browser"
+        "typings/main",
+        "typings/main.d.ts"
     ]
 }
