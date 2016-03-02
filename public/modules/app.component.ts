@@ -1,7 +1,30 @@
-import {Component} from 'angular2/core';
+import { Component } from 'angular2/core';
+import { RouteConfig, ROUTER_DIRECTIVES, ROUTER_PROVIDERS } from 'angular2/router';
+
+import { DashboardComponent } from './dashboard/dashboard.component'
 
 @Component({
-    selector: 'my-app',
-    template: '<h1>My First Angular 2 App</h1>'
+  selector: 'tan-app',
+  template: `
+    <h1>{{title}}</h1>
+    <nav>
+      <a [routerLink]="['Dashboard']">Dashboard</a>
+    </nav>
+    <router-outlet></router-outlet>
+  `,
+  directives: [ROUTER_DIRECTIVES],
+  providers: [
+    ROUTER_PROVIDERS
+  ]
 })
-export class AppComponent { }
+@RouteConfig([
+  {
+    path: '/dashboard',
+    name: 'Dashboard',
+    component: DashboardComponent,
+    useAsDefault: true
+  }
+])
+export class AppComponent {
+  title = 'Angular2 tasks demo app';
+}
