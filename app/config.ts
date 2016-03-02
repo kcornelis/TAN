@@ -23,6 +23,6 @@ export class Express {
 	    this.app.set('views', './app/web/views');
     
         this.app.get('/', function (req, res) { res.render('index'); });
-        this.app.use(express.static(path.resolve('./'))); // todo fix this!
+        this.app.use(express.static(path.resolve('./public')));
     }
 }

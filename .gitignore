@@ -79,5 +79,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # Typescript
-/tmp/
 /typings/
+/public/jspm/
