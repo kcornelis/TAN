@@ -1,15 +1,17 @@
 import * as express from 'express';
 import * as path from 'path';
 import * as consolidate from 'consolidate';
-import { TasksController } from './api/public/tasks/tasks.controller'
+import { TasksRoutes } from './api/public/tasks'
 
-export class Express {
+export class ExpressConfig {
     
     app: express.Express;
+    routes: any[] = [];
     
     constructor(){
         this.app = express();
         this.initializeExpress();
+        this.registerRoutes();
     }
     
     start() {
@@ -25,8 +27,9 @@ export class Express {
     
         this.app.get('/', function (req, res) { res.render('index'); });
         this.app.use(express.static(path.resolve('./public')));
-        
-        var tasksController = new TasksController();
-        this.app.route('/api/public/tasks').get(tasksController.getAll);
+    }
+    
+    private registerRoutes(){
+        this.routes.push(new TasksRoutes(this.app));
     }
 }
