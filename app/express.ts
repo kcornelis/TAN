@@ -21,9 +21,9 @@ export class ExpressConfig {
     }
     
     private initializeExpress(){
-	    this.app.engine('.html', consolidate.swig);
-	    this.app.set('view engine', '.html');
-	    this.app.set('views', './app/web/views');
+        this.app.engine('.html', consolidate.swig);
+        this.app.set('view engine', '.html');
+        this.app.set('views', './app/web/views');
     
         this.app.get('/', function (req, res) { res.render('index'); });
         this.app.use(express.static(path.resolve('./public')));
