@@ -1,3 +1,5 @@
+///<reference path="../typings/main.d.ts" />
+
 import * as express from 'express';
 import * as path from 'path';
 import * as consolidate from 'consolidate';

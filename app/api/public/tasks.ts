@@ -27,6 +27,6 @@ export class TasksController {
     }
 }
 
-class Task{
+export class Task{
     constructor(public name: string, public description: string){ }
 }

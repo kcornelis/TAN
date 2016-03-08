@@ -81,3 +81,4 @@ $RECYCLE.BIN/
 # Typescript
 /typings/
 /public/jspm/
+/tmp/
