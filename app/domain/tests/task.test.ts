@@ -1,4 +1,4 @@
-require('should');
+import 'should';
 import { Task } from '../task';
 
 describe('a task', () => {
