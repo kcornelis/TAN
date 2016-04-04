@@ -3,9 +3,9 @@
 import * as express from 'express';
 import * as path from 'path';
 import * as consolidate from 'consolidate';
-import { TasksRoutes } from './api/public/tasks'
+import { TasksRoutes } from './api/public/config/task'
 
-export class ExpressConfig {
+export class Express {
     
     app: express.Express;
     routes: any[] = [];

@@ -1,7 +1,7 @@
 require('should');
-import { Task } from './tasks';
+import { Task } from '../task';
 
-describe('a task model', () => {
+describe('a task', () => {
     var task: Task = new Task('name', 'description');
 
     it('has a name', () => {

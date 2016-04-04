@@ -8,12 +8,12 @@ var tsProject = ts.createProject('tsconfig.json', { typescript: require('typescr
 
 gulp.task('build-system', function () {
     return gulp.src([
-        './node_modules/es6-shim/es6-shim.min.js',
-        './public/jspm/system-polyfills.js',
-        './node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
-        './node_modules/angular2/bundles/angular2-polyfills.js',
-        './public/jspm/system.src.js'
-    ])
+            './node_modules/es6-shim/es6-shim.min.js',
+            './public/jspm/system-polyfills.js',
+            './node_modules/angular2/es6/dev/src/testing/shims_for_IE.js',
+            './node_modules/angular2/bundles/angular2-polyfills.js',
+            './public/jspm/system.src.js'
+        ])
         .pipe(concat('system.js'))
         .pipe(gulp.dest('./public/dist/'));
 });
