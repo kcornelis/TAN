@@ -10,7 +10,7 @@ export class TasksController {
     }
     
     getCount(request: Request, response: Response){
-        response.send(this.tasks.length);
+        response.send({ count: this.tasks.length });
     }
     
     create(request: Request, response: Response){

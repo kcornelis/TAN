@@ -1,19 +1,19 @@
 {
   "name": "tan",
-  "dependencies": {
- 
-  },
+  "dependencies": {},
   "devDependencies": {},
   "ambientDependencies": {
-    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts",
-    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts",
-    "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts",
-    "serve-static": "github:DefinitelyTyped/DefinitelyTyped/serve-static/serve-static.d.ts",
-    "mime": "github:DefinitelyTyped/DefinitelyTyped/mime/mime.d.ts",
     "consolidate": "github:soywiz/typescript-node-definitions/consolidate.d.ts",
     "es6-shim": "github:DefinitelyTyped/DefinitelyTyped/es6-shim/es6-shim.d.ts#6697d6f7dadbf5773cb40ecda35a76027e0783b2",
+    "express": "github:DefinitelyTyped/DefinitelyTyped/express/express.d.ts",
+    "lodash": "github:DefinitelyTyped/DefinitelyTyped/lodash/lodash.d.ts",
+    "mime": "github:DefinitelyTyped/DefinitelyTyped/mime/mime.d.ts",
     "mocha": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha.d.ts",
     "mocha-node": "github:DefinitelyTyped/DefinitelyTyped/mocha/mocha-node.d.ts",
-    "should": "github:DefinitelyTyped/DefinitelyTyped/should/should.d.ts"
+    "node": "github:DefinitelyTyped/DefinitelyTyped/node/node.d.ts",
+    "serve-static": "github:DefinitelyTyped/DefinitelyTyped/serve-static/serve-static.d.ts",
+    "should": "github:DefinitelyTyped/DefinitelyTyped/should/should.d.ts",
+    "superagent": "registry:dt/superagent#1.4.0+20160317120654",
+    "supertest": "registry:dt/supertest#1.1.0+20160317120654"
   }
 }
